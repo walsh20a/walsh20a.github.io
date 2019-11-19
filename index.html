@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,28 +9,84 @@
     <link rel="stylesheet" href='style.css'>
     </link>
 
-    <title>Allie and Ahmed's Life Page!</title>
-</head>
-Hello and welcome to our website!
+    <title>A&A Page!</title>
+
+    <div class="container">
+        <div class="item header">header
+            <h1> Hello and welcome to Allie and Ahmed's website! </h1>
+        </div>
+        <div class="item sidebar">sidebar
+            Bosnians Click here!
+        </div>
+        <div class="item content-1">Content-1
+            Pictures and buttons will be here!
+
+        </div>
+
+        <div class="item content-2">Content-2
+
+            <div id="container">
+
+                <div id="img1">
+                    <img src="cheers.jpg" />
+                    Also WORDS here and stuff
+
+                    More things </div>
+            </div>
+            <div class="item content-3">Content-3
 
 <body>
     This is the story of our lives, how we met, who we are, what we do, where we live and more!
 
-    Feel free to click the links for more information on any topic!
+    Feel free to click the links for more information on any topic!</body>
+</div>
 
 
-    <div id="container">
+<div class="item footer">footer</div>
 
-    </div id="img 1">
-    <img src="cheers.jpg" />
-    </div>
 
-    <div id="img 2">
-        <img src="C:\Users\Owner\code\walsh20a.github.io\vermont pic.JPG" />
+<div id="img2">
+    <img src="vermontwinehappy.jpg" />
+    Also WORDS here and stuff
 
-    </div>
+    More things </div>
 
-    </div>
-</body>
 
-</html>
+<div id="buttons">
+    <h1> HERE ARE SOME PICTURES!!!</h1>
+    <button id="picButton"> Pictures of Us!</button>
+    <button id="picButton"> Pictures of Vermont!</button>
+    <button id="picButton"> Pictures of Family and Friends!</button>
+    <button id="picButton"> Pictures of the Wedding!</button>
+</div>
+
+
+<div id="display"></div>
+<script>
+    let display = document.getElementById('display')
+    let count = 0
+
+
+    time()
+    function time() {
+        setInterval(countUp, 1000)
+    }
+
+    function countUp() {
+        if (count >= 100) {
+            clearInterval(countUp)
+            alert("Time's Up", stop)
+
+        } else {
+            count++
+            display.innerText = count
+        }
+    }
+
+
+    
+
+   
+</body >
+
+</html >
